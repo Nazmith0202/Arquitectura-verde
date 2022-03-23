@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+body .menu-navegacion{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+
+body .contact-us {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}
+
+main{
+    background: #DDD2C0;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+}
+
+header{
+    height: 100vh;
+    background-image: url(https://media2.giphy.com/media/PcJDzGFriG2bPsPATX/giphy.gif?cid=790b7611a10d57f625384866f5e2a374d423e4b4fb1fac34&rid=giphy.gif&ct=s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.menu-navegacion{
+    position: fixed;
+    background: rgba(24, 23, 23, 0.562);
+    width: 1500px;
+}
+
+.menu-navegacion a{
+    position: static;
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-navegacion a:hover{
+    background: #faae8e;
+}
+/* Nuestro Servicio */
+
+
+.services-contenedor p{
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    width: 800px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.subtitulo p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* Footer*/
+
+footer{
+    background: #475c45;
+    padding-bottom: 0.2px;
+}
+
+.contact-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+.footer_copy{
+    font-weight: 300;
+}
+
+.footer_img{
+    width: 60%;
+}
+
+
+.social-media{
+    width: auto;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+.social-media-icon:hover{
+    background: #fff;
+    color: #3d6856;
+}
+
+.waves{
+    position:static;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+    .contenedor-servicio{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-servicio{
+        width: 80%;
+        text-align: center;
+    }
+
+    .service{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and(max-width:500px) {
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 100%;
+    }  
+}
